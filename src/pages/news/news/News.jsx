@@ -17,7 +17,7 @@ export const News = () => {
 
   const fetchNewsById = ({ queryKey }) => {
     const newsId = queryKey[1];
-    return axios.get(`http://localhost:5000/api/news/${newsId}`);
+    return axios.get(`https://the-news-server-mpnm6d99b-jayed-bin-nazirs-projects.vercel.app/api/news/${newsId}`);
   };
 
   const {

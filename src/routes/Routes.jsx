@@ -36,14 +36,14 @@ export const routers = createBrowserRouter([
             // {
                 
             //     element:<Category/>,
-            //     loader:({params})=>fetch(`http://localhost:5000/api/categories/${params.id=0}`),
+            //     loader:({params})=>fetch(`https://the-news-server-mpnm6d99b-jayed-bin-nazirs-projects.vercel.app/api/categories/${params.id=0}`),
             //     index:true
                 
             // },
             {
                 path:':id',
                 element:<Category/>,
-                loader:({params})=>fetch(`http://localhost:5000/api/categories/${params.id}`),
+                loader:({params})=>fetch(`https://the-news-server-mpnm6d99b-jayed-bin-nazirs-projects.vercel.app/api/categories/${params.id}`),
                 
             }
         ],

@@ -15,7 +15,7 @@ export const LeftNav = () => {
   let [selectedId, setSelectedId] = useState(0);
   console.log(selectedId)
   useEffect(() => {
-    fetch("http://localhost:5000/api/categories")
+    fetch("https://the-news-server-mpnm6d99b-jayed-bin-nazirs-projects.vercel.app/api/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((err) => console.log(err));
